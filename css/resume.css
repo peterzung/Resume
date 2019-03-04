@@ -175,7 +175,7 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-	background-color: gray !important;
+	background-color: rgba(128, 128, 128, 0.295) !important;
 }
 
 .text-primary {
