@@ -8,7 +8,24 @@ class App extends Component {
 			<div className="App">
 				{/* Desktop View */}
 				<Hidden xsDown>
-					<Typography>Desktop</Typography>
+					<Typography component="h3" variant="h3">
+						{/* Side Pane */}
+						<div
+							style={{
+								backgroundColor: 'white',
+								textAlign: 'center',
+								position: 'fixed',
+								top: 0,
+								left: 0,
+								display: 'flex',
+								flexDirection: 'column',
+								width: '12rem',
+								height: '100vh'
+							}}
+						>
+							<Typography>Hola</Typography>
+						</div>
+					</Typography>
 				</Hidden>
 
 				{/* Mobile view */}

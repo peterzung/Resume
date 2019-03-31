@@ -5,10 +5,11 @@ import * as serviceWorker from './serviceWorker';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import { dark } from '@material-ui/core/styles/createPalette';
 
 const theme = createMuiTheme({
 	typography: {
+		useNextVariants: true,
+
 		// Use the system font instead of the default Roboto font.
 		fontFamily: [
 			'-apple-system',
