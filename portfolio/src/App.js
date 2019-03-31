@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Typography } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
+import { borders } from '@material-ui/system';
 
 class App extends Component {
 	render() {
@@ -12,7 +13,7 @@ class App extends Component {
 						{/* Side Pane */}
 						<div
 							style={{
-								backgroundColor: 'white',
+								backgroundColor: 'grey',
 								textAlign: 'center',
 								position: 'fixed',
 								top: 0,
@@ -23,7 +24,17 @@ class App extends Component {
 								height: '100vh'
 							}}
 						>
-							<Typography>Hola</Typography>
+							<div
+								style={{
+									marginTop: '4rem'
+								}}
+							>
+								<img
+									width="100"
+									src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
+									alt="Saud Tauqeer Profile image"
+								/>
+							</div>
 						</div>
 					</Typography>
 				</Hidden>
