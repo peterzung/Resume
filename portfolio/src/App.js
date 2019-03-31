@@ -14,7 +14,7 @@ class App extends Component {
 						<div
 							style={{
 								backgroundColor: 'grey',
-								textAlign: 'center',
+								paddingLeft: '2.70rem',
 								position: 'fixed',
 								top: 0,
 								left: 0,
@@ -24,17 +24,17 @@ class App extends Component {
 								height: '100vh'
 							}}
 						>
-							<div
+							<img
 								style={{
-									marginTop: '4rem'
+									display: 'flex',
+									marginTop: '4rem',
+									borderColor: '#16a422',
+									borderRadius: '4em'
 								}}
-							>
-								<img
-									width="100"
-									src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
-									alt="Saud Tauqeer Profile image"
-								/>
-							</div>
+								width="100"
+								src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
+								alt="Saud Tauqeer Profile image"
+							/>
 						</div>
 					</Typography>
 				</Hidden>
