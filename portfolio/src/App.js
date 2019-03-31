@@ -6,7 +6,15 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Typography>hello</Typography>
+				{/* Desktop View */}
+				<Hidden xsDown>
+					<Typography>Desktop</Typography>
+				</Hidden>
+
+				{/* Mobile view */}
+				<Hidden smUp>
+					<Typography>Mobile</Typography>
+				</Hidden>
 			</div>
 		);
 	}
