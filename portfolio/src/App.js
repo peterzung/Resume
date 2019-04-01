@@ -5,6 +5,7 @@ import ScrollspyNav from 'react-scrollspy-nav';
 
 const styles = {
 	sidePane: {
+		textAlign: 'center',
 		backgroundColor: '#292828',
 		position: 'fixed',
 		top: 0,
@@ -20,7 +21,11 @@ const styles = {
 		marginTop: '4rem',
 		border: 'solid 0.3rem #16a422'
 	},
-	sidePaneLink: {}
+	sidePaneLink: {
+		fontWeight: '800',
+		letterSpacing: '0.05rem',
+		textTransform: 'uppercase'
+	}
 };
 
 class App extends Component {
