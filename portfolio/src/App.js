@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Typography } from '@material-ui/core';
+import { Typography, Avatar } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
+
 import { borders } from '@material-ui/system';
 
 class App extends Component {
@@ -13,8 +14,7 @@ class App extends Component {
 						{/* Side Pane */}
 						<div
 							style={{
-								backgroundColor: 'grey',
-								paddingLeft: '2.70rem',
+								backgroundColor: '#292828',
 								position: 'fixed',
 								top: 0,
 								left: 0,
@@ -24,17 +24,23 @@ class App extends Component {
 								height: '100vh'
 							}}
 						>
-							<img
+							<div
 								style={{
-									display: 'flex',
-									marginTop: '4rem',
-									borderColor: '#16a422',
-									borderRadius: '4em'
+									marginLeft: 'auto',
+									marginRight: 'auto'
 								}}
-								width="100"
-								src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
-								alt="Saud Tauqeer Profile image"
-							/>
+							>
+								<Avatar
+									style={{
+										width: '92px',
+										height: '92px',
+										marginTop: '4rem',
+										border: 'solid 0.3rem #16a422'
+									}}
+									src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
+									alt="Saud Tauqeer Profile image"
+								/>
+							</div>
 						</div>
 					</Typography>
 				</Hidden>
