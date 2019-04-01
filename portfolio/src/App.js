@@ -2,6 +2,24 @@ import React, { Component } from 'react';
 import { Typography, Avatar } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
 import ScrollspyNav from 'react-scrollspy-nav';
+import Styled from 'styled-components';
+
+const PanelLink = Styled.a`
+color: #dddddd;
+&:hover {
+    color: #cfbaba8f;
+  };
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+`;
 
 const styles = {
 	sidePane: {
@@ -20,11 +38,6 @@ const styles = {
 		height: '92px',
 		marginTop: '4rem',
 		border: 'solid 0.3rem #16a422'
-	},
-	sidePaneLink: {
-		fontWeight: '800',
-		letterSpacing: '0.05rem',
-		textTransform: 'uppercase'
 	}
 };
 
@@ -54,25 +67,15 @@ class App extends Component {
 								scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
 								activeNavClass="is-active"
 							>
-								<a style={styles.sidePaneLink} href="#about">
-									<Typography>About</Typography>
-								</a>
+								<PanelLink href="#about">About</PanelLink>
 
-								<a style={styles.sidePaneLink} href="#skills">
-									<Typography> Skills</Typography>
-								</a>
+								<PanelLink href="#skills">Skills</PanelLink>
 
-								<a style={styles.sidePaneLink} href="#experience">
-									<Typography>Experience</Typography>
-								</a>
+								<PanelLink href="#experience">Experience</PanelLink>
 
-								<a style={styles.sidePaneLink} href="#projects">
-									<Typography>Projects</Typography>
-								</a>
+								<PanelLink href="#projects">Projects</PanelLink>
 
-								<a style={styles.sidePaneLink} href="#learning">
-									<Typography>learning</Typography>
-								</a>
+								<PanelLink href="#learning">learning</PanelLink>
 							</ScrollspyNav>
 						</div>
 					</div>
