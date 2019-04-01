@@ -59,19 +59,19 @@ class App extends Component {
 								</a>
 
 								<a style={styles.sidePaneLink} href="#skills">
-									Skills
+									<Typography> Skills</Typography>
 								</a>
 
 								<a style={styles.sidePaneLink} href="#experience">
-									Experience
+									<Typography>Experience</Typography>
 								</a>
 
 								<a style={styles.sidePaneLink} href="#projects">
-									Projects
+									<Typography>Projects</Typography>
 								</a>
 
 								<a style={styles.sidePaneLink} href="#learning">
-									learning
+									<Typography>learning</Typography>
 								</a>
 							</ScrollspyNav>
 						</div>
