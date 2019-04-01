@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Typography, Avatar } from '@material-ui/core';
+import { Typography, Avatar, Grid } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
 import ScrollspyNav from 'react-scrollspy-nav';
 import Styled from 'styled-components';
@@ -79,6 +79,7 @@ class App extends Component {
 							</ScrollspyNav>
 						</div>
 					</div>
+					<Grid container />
 				</Hidden>
 
 				{/* Mobile view */}
