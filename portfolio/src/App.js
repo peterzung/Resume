@@ -85,38 +85,46 @@ class App extends Component {
 					direction="row"
 					justify="center"
 					alignItems="center"
-					style={{ backgroundColor: '#292828', height: '100vh', width: '12rem', position: 'absolute' }}
+					style={{
+						backgroundColor: '#292828',
+						height: '100vh',
+						width: '12rem',
+						position: 'absolute',
+						paddingBottom: '220px'
+					}}
 				>
 					<Grid item>
 						<Avatar
+							style={styles.sidePaneAvatar}
 							src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
 							alt="Saud Tauqeer Profile image"
 						/>
+						<Grid item style={{ textAlign: 'center' }}>
+							<ScrollspyNav
+								scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
+								activeNavClass="is-active"
+							>
+								<Typography css={SidePaneLinkCss} href="#about">
+									About
+								</Typography>
 
-						<ScrollspyNav
-							scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
-							activeNavClass="is-active"
-						>
-							<Typography css={SidePaneLinkCss} href="#about">
-								About
-							</Typography>
+								<Typography css={SidePaneLinkCss} href="#skills">
+									Skills
+								</Typography>
 
-							<Typography css={SidePaneLinkCss} href="#skills">
-								Skills
-							</Typography>
+								<Typography css={SidePaneLinkCss} href="#experience">
+									Experience
+								</Typography>
 
-							<Typography css={SidePaneLinkCss} href="#experience">
-								Experience
-							</Typography>
+								<Typography css={SidePaneLinkCss} href="#projects">
+									Projects
+								</Typography>
 
-							<Typography css={SidePaneLinkCss} href="#projects">
-								Projects
-							</Typography>
-
-							<Typography css={SidePaneLinkCss} href="#learning">
-								learning
-							</Typography>
-						</ScrollspyNav>
+								<Typography css={SidePaneLinkCss} href="#learning">
+									learning
+								</Typography>
+							</ScrollspyNav>
+						</Grid>
 					</Grid>
 				</Grid>
 				{/* </Hidden> */}
