@@ -67,7 +67,7 @@ class App extends Component {
 				{/* <Hidden xsDown> */}
 				<Grid
 					container
-					direction="row"
+					direction="column"
 					justify="center"
 					alignItems="center"
 					style={{
