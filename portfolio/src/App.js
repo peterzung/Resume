@@ -2,23 +2,25 @@ import React, { Component } from 'react';
 import { Typography, Avatar, Grid } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
 import ScrollspyNav from 'react-scrollspy-nav';
-import Styled from 'styled-components';
+/** @jsx jsx */
+import { jsx, css } from '@emotion/core';
 
-const PanelLink = Styled.a`
-color: #dddddd;
-&:hover {
-    color: #cfbaba8f;
-  };
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+const SidePaneLinkCss = css`
+	color: #dddddd;
+	&:hover {
+		color: #cfbaba8f;
+	}
+	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
 		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
-  text-decoration: none;
-
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: 0.05rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
 `;
 
 const styles = {
@@ -67,15 +69,25 @@ class App extends Component {
 								scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
 								activeNavClass="is-active"
 							>
-								<PanelLink href="#about">About</PanelLink>
+								<Typography css={SidePaneLinkCss} href="#about">
+									About
+								</Typography>
 
-								<PanelLink href="#skills">Skills</PanelLink>
+								<Typography css={SidePaneLinkCss} href="#skills">
+									Skills
+								</Typography>
 
-								<PanelLink href="#experience">Experience</PanelLink>
+								<Typography css={SidePaneLinkCss} href="#experience">
+									Experience
+								</Typography>
 
-								<PanelLink href="#projects">Projects</PanelLink>
+								<Typography css={SidePaneLinkCss} href="#projects">
+									Projects
+								</Typography>
 
-								<PanelLink href="#learning">learning</PanelLink>
+								<Typography css={SidePaneLinkCss} href="#learning">
+									learning
+								</Typography>
 							</ScrollspyNav>
 						</div>
 					</div>
