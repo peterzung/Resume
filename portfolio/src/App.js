@@ -10,30 +10,15 @@ const SidePaneLinkCss = css`
 	&:hover {
 		color: #16a422;
 	}
-	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-	display: flex;
-	flex-direction: column;
-	margin-left: auto;
-	margin-right: auto;
-	letter-spacing: 0.05rem;
+
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 500;
 	letter-spacing: 0.05rem;
-	padding-top: 7px;
+	padding-top: 6px;
 `;
 
 const styles = {
-	sidePane: {
-		textAlign: 'center',
-		backgroundColor: '#292828',
-		position: 'fixed',
-		top: 0,
-		left: 0,
-
-		width: '12rem'
-	},
 	sidePaneAvatar: {
 		width: '92px',
 		height: '92px',
