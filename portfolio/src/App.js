@@ -35,6 +35,7 @@ class App extends Component {
 				<Hidden xsDown>
 					<Grid
 						container
+						zeroMinWidth
 						direction="column"
 						justify="center"
 						alignItems="center"
@@ -79,6 +80,29 @@ class App extends Component {
 									</Typography>
 								</ScrollspyNav>
 							</Grid>
+						</Grid>
+					</Grid>
+
+					{/* Content Container */}
+					<Grid
+						md
+						container
+						direction="column"
+						style={{
+							maxWidth: '75rem',
+							padding: '20em'
+						}}
+					>
+						<Grid item>
+							<Typography>
+								Saud
+								<span class="text-primary">Tauqeer</span>
+							</Typography>
+							<Typography>
+								{' '}
+								Gujranwala · Pakistan · (+92) 321-5991397 ·
+								<a href="mailto:saudtauqeer381@gmail.com">saudtauqeer381@gmail.com</a>
+							</Typography>
 						</Grid>
 					</Grid>
 				</Hidden>
