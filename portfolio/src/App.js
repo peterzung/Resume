@@ -30,89 +30,63 @@ const styles = {
 class App extends Component {
 	render() {
 		return (
-			// <React.Fragment>
-			// 	{/* Desktop View */}
-			// 	<Grid container direction="column" style={{height: "100vh"}}>
-			// 	<Hidden xsDown>
-			// 		{/* Side Pane */}
-			// 			<Grid item xs={12}>
-			// 				<div style={styles.sidePane}>
-			// 					<div
-			// 						style={{
-			// 							marginLeft: 'auto',
-			// 							marginRight: 'auto'
-			// 						}}
-			// 					>
-			// 						{/* Profile image */}
-			// 						<Avatar
-			// 							style={styles.sidePaneAvatar}
-			// 							src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
-			// 							alt="Saud Tauqeer Profile image"
-			// 						/>
-			// 					</div>
-			// 					<div>
-
-			// 					</div>
-			// 				</div>
-			// 			</Grid>
-			// 		</Grid>
-			// 	</Hidden>
-
-			// 	{/* Mobile view */}
-			// 	<Hidden smUp>
-			// 		<Typography>Mobile</Typography>
-			// 	</Hidden>
-			// </React.Fragment>
 			<React.Fragment>
-				{/* <Hidden xsDown> */}
-				<Grid
-					container
-					direction="column"
-					justify="center"
-					alignItems="center"
-					style={{
-						backgroundColor: '#292828',
-						height: '100vh',
-						width: '12rem',
-						position: 'absolute',
-						paddingBottom: '220px'
-					}}
-				>
-					<Grid item>
-						<Avatar
-							style={styles.sidePaneAvatar}
-							src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
-							alt="Saud Tauqeer Profile image"
-						/>
-						<Grid item style={{ textAlign: 'center' }}>
-							<ScrollspyNav
-								scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
-								activeNavClass="is-active"
-							>
-								<Typography css={SidePaneLinkCss} href="#about">
-									About
-								</Typography>
+				{/* Desktop View */}
+				<Hidden xsDown>
+					<Grid
+						container
+						direction="column"
+						justify="center"
+						alignItems="center"
+						style={{
+							backgroundColor: '#292828',
+							height: '100vh',
+							width: '12rem',
+							position: 'absolute',
+							top: '0',
+							paddingBottom: '160px'
+						}}
+					>
+						<Grid item md={12}>
+							<Avatar
+								style={styles.sidePaneAvatar}
+								src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
+								alt="Saud Tauqeer Profile image"
+							/>
+							<Grid item style={{ textAlign: 'center' }}>
+								<ScrollspyNav
+									scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
+									activeNavClass="is-active"
+								>
+									<Typography css={SidePaneLinkCss} href="#about">
+										About
+									</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#skills">
-									Skills
-								</Typography>
+									<Typography css={SidePaneLinkCss} href="#skills">
+										Skills
+									</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#experience">
-									Experience
-								</Typography>
+									<Typography css={SidePaneLinkCss} href="#experience">
+										Experience
+									</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#projects">
-									Projects
-								</Typography>
+									<Typography css={SidePaneLinkCss} href="#projects">
+										Projects
+									</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#learning">
-									learning
-								</Typography>
-							</ScrollspyNav>
+									<Typography css={SidePaneLinkCss} href="#learning">
+										learning
+									</Typography>
+								</ScrollspyNav>
+							</Grid>
 						</Grid>
 					</Grid>
-				</Grid>
-				{/* </Hidden> */}
+				</Hidden>
+
+				{/* Mobile view */}
+				<Hidden smUp>
+					<Typography>Mobile</Typography>
+				</Hidden>
 			</React.Fragment>
 		);
 	}
