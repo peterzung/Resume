@@ -8,7 +8,7 @@ import { jsx, css } from '@emotion/core';
 const SidePaneLinkCss = css`
 	color: #dddddd;
 	&:hover {
-		color: #cfbaba8f;
+		color: #16a422;
 	}
 	font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
 		sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
@@ -21,6 +21,7 @@ const SidePaneLinkCss = css`
 	text-decoration: none;
 	font-weight: 500;
 	letter-spacing: 0.05rem;
+	padding-top: 7px;
 `;
 
 const styles = {
@@ -30,15 +31,13 @@ const styles = {
 		position: 'fixed',
 		top: 0,
 		left: 0,
-		display: 'flex',
-		flexDirection: 'column',
-		width: '12rem',
-		height: '100vh'
+
+		width: '12rem'
 	},
 	sidePaneAvatar: {
 		width: '92px',
 		height: '92px',
-		marginTop: '4rem',
+		marginTop: '9rem',
 		border: 'solid 0.3rem #16a422'
 	}
 };
@@ -46,59 +45,82 @@ const styles = {
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				{/* Desktop View */}
-				<Hidden xsDown>
-					{/* Side Pane */}
-					<div style={styles.sidePane}>
-						<div
-							style={{
-								marginLeft: 'auto',
-								marginRight: 'auto'
-							}}
+			// <React.Fragment>
+			// 	{/* Desktop View */}
+			// 	<Grid container direction="column" style={{height: "100vh"}}>
+			// 	<Hidden xsDown>
+			// 		{/* Side Pane */}
+			// 			<Grid item xs={12}>
+			// 				<div style={styles.sidePane}>
+			// 					<div
+			// 						style={{
+			// 							marginLeft: 'auto',
+			// 							marginRight: 'auto'
+			// 						}}
+			// 					>
+			// 						{/* Profile image */}
+			// 						<Avatar
+			// 							style={styles.sidePaneAvatar}
+			// 							src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
+			// 							alt="Saud Tauqeer Profile image"
+			// 						/>
+			// 					</div>
+			// 					<div>
+
+			// 					</div>
+			// 				</div>
+			// 			</Grid>
+			// 		</Grid>
+			// 	</Hidden>
+
+			// 	{/* Mobile view */}
+			// 	<Hidden smUp>
+			// 		<Typography>Mobile</Typography>
+			// 	</Hidden>
+			// </React.Fragment>
+			<React.Fragment>
+				{/* <Hidden xsDown> */}
+				<Grid
+					container
+					direction="row"
+					justify="center"
+					alignItems="center"
+					style={{ backgroundColor: '#292828', height: '100vh', width: '12rem', position: 'absolute' }}
+				>
+					<Grid item>
+						<Avatar
+							src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
+							alt="Saud Tauqeer Profile image"
+						/>
+
+						<ScrollspyNav
+							scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
+							activeNavClass="is-active"
 						>
-							{/* Profile image */}
-							<Avatar
-								style={styles.sidePaneAvatar}
-								src="https://avatars1.githubusercontent.com/u/42393962?s=460&v=4"
-								alt="Saud Tauqeer Profile image"
-							/>
-						</div>
-						<div>
-							<ScrollspyNav
-								scrollTargetIds={[ 'about', 'skills', 'experience', 'projects', 'learning' ]}
-								activeNavClass="is-active"
-							>
-								<Typography css={SidePaneLinkCss} href="#about">
-									About
-								</Typography>
+							<Typography css={SidePaneLinkCss} href="#about">
+								About
+							</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#skills">
-									Skills
-								</Typography>
+							<Typography css={SidePaneLinkCss} href="#skills">
+								Skills
+							</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#experience">
-									Experience
-								</Typography>
+							<Typography css={SidePaneLinkCss} href="#experience">
+								Experience
+							</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#projects">
-									Projects
-								</Typography>
+							<Typography css={SidePaneLinkCss} href="#projects">
+								Projects
+							</Typography>
 
-								<Typography css={SidePaneLinkCss} href="#learning">
-									learning
-								</Typography>
-							</ScrollspyNav>
-						</div>
-					</div>
-					<Grid container />
-				</Hidden>
-
-				{/* Mobile view */}
-				<Hidden smUp>
-					<Typography>Mobile</Typography>
-				</Hidden>
-			</div>
+							<Typography css={SidePaneLinkCss} href="#learning">
+								learning
+							</Typography>
+						</ScrollspyNav>
+					</Grid>
+				</Grid>
+				{/* </Hidden> */}
+			</React.Fragment>
 		);
 	}
 }
