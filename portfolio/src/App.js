@@ -85,23 +85,50 @@ class App extends Component {
 
 					{/* Content Container */}
 					<Grid
-						md
 						container
 						direction="column"
 						style={{
 							maxWidth: '75rem',
-							padding: '20em'
+							paddingLeft: '14em'
 						}}
 					>
 						<Grid item>
-							<Typography>
+							<Typography
+								css={css`
+									padding-right: 6px;
+									color: #abaeb7;
+									display: inline-block;
+								`}
+								variant="h3"
+								component="h3"
+							>
 								Saud
-								<span class="text-primary">Tauqeer</span>
 							</Typography>
-							<Typography>
-								{' '}
-								Gujranwala · Pakistan · (+92) 321-5991397 ·
-								<a href="mailto:saudtauqeer381@gmail.com">saudtauqeer381@gmail.com</a>
+							<Typography
+								css={css`
+									display: inline-block;
+									color: #bd5d38;
+								`}
+								variant="h3"
+								component="h3"
+							>
+								Tauqeer
+							</Typography>
+
+							<Typography css={css`padding-top: 2px;`}>
+								Pakistan · (+92) 321-5991397 · {' '}
+								<a
+									css={css`
+										color: #dddbdb;
+										&:hover {
+											color: #cfbaba8f;
+										}
+										text-decoration: none;
+									`}
+									href="mailto:saudtauqeer381@gmail.com"
+								>
+									saudtauqeer381@gmail.com
+								</a>
 							</Typography>
 						</Grid>
 					</Grid>
