@@ -141,7 +141,7 @@ class App extends Component {
 									overflowY: 'auto'
 								}}
 							>
-								<Grid item xs={12} style={{ marginTop: '20px' }}>
+								<Grid item xs={12}>
 									<Scrollbar height={'100vh'}>
 										<Grid style={{ padding: '4px 10px 10px 10px' }}>
 											<Typography>
