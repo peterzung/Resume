@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Typography, Avatar, Grid } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
 import ScrollspyNav from 'react-scrollspy-nav';
-import Scrollbar from 'react-scrollbars-custom';
+import Scrollbar from 'react-custom-scrollbars';
 
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
@@ -133,25 +133,41 @@ class App extends Component {
 								</a>
 							</Typography>
 							{/* social links */}
-							<Grid container direction="row">
-								<a
-									href="https://drive.google.com/file/d/1jJjONanUisBlDVYVE6HsjABFPecwatNL/view?usp=sharing"
-									target="blank"
-								>
-									<img alt="PDF resume icon" src="/img/svg/pdf.svg" width="50" height="55" />
-								</a>
-								<a href="https://www.linkedin.com/in/saud-tauqeer" target="blank">
-									<img alt="LinkedIn icon" src="./img/svg/linkedin.svg" width="50" height="55" />
-								</a>
-								<a href="https://github.com/SaudTauqeer" target="blank">
-									<img alt="Github" src="/img/svg/github.svg" width="50" height="55" />
-								</a>
-								<a href="https://twitter.com/@Saud_Tauqeer" target="blank">
-									<img alt="Twitter" src="./img/svg/twitter.svg" width="50" height="55" />
-								</a>
-								<a href="m.me/supreme381" target="blank">
-									<img alt="Messenger icon" src="./img/svg/messenger.svg" width="50" height="55" />
-								</a>
+							<Grid container spacing="8" direction="row" justify="center">
+								<Grid item>
+									<a href="https://github.com/SaudTauqeer" target="blank">
+										<img alt="Github" src="/img/svg/github.svg" width="30" height="35" />
+									</a>
+								</Grid>
+								<Grid item>
+									<a
+										href="https://drive.google.com/file/d/1jJjONanUisBlDVYVE6HsjABFPecwatNL/view?usp=sharing"
+										target="blank"
+									>
+										<img alt="PDF resume icon" src="/img/svg/pdf.svg" width="30" height="35" />
+									</a>
+								</Grid>
+								<Grid item>
+									<a href="https://www.linkedin.com/in/saud-tauqeer" target="blank">
+										<img alt="LinkedIn icon" src="./img/svg/linkedin.svg" width="30" height="35" />
+									</a>
+								</Grid>
+
+								<Grid item>
+									<a href="https://twitter.com/@Saud_Tauqeer" target="blank">
+										<img alt="Twitter" src="./img/svg/twitter.svg" width="30" height="35" />
+									</a>
+								</Grid>
+								<Grid item>
+									<a href="m.me/supreme381" target="blank">
+										<img
+											alt="Messenger icon"
+											src="./img/svg/messenger.svg"
+											width="30"
+											height="35"
+										/>
+									</a>
+								</Grid>
 							</Grid>
 							{/* Scroll Container  */}
 							<Grid
@@ -162,9 +178,15 @@ class App extends Component {
 									overflowY: 'auto'
 								}}
 							>
-								<Grid item xs={12}>
-									<Scrollbar height={'100vh'}>
-										<Grid style={{ padding: '4px 10px 10px 10px' }}>
+								<Grid item md={12}>
+									<Scrollbar
+										thumbMinSize={20}
+										autoHide={true}
+										autoHideTimeout={2000}
+										autoHideDuration={400}
+										height={'100vh'}
+									>
+										<Grid style={{ padding: '4px 10px 30px 10px' }}>
 											<Typography>
 												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus et
 												metus sagittis scelerisque. Morbi malesuada quam in mauris dapibus, sit
