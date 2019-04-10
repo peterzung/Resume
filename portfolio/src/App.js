@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Typography, Avatar, Grid, Paper } from '@material-ui/core';
+import { Typography, Avatar, Grid } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
 import ScrollspyNav from 'react-scrollspy-nav';
 import Scrollbar from 'react-scrollbars-custom';
@@ -85,13 +85,13 @@ class App extends Component {
 						</Grid>
 					</Grid>
 
-					{/* Content Container */}
+					{/* Header Content */}
 					<Grid
 						container
 						direction="column"
 						style={{
 							maxWidth: '75rem',
-							paddingLeft: '14em'
+							paddingLeft: '13em'
 						}}
 					>
 						<Grid item>
@@ -117,7 +117,7 @@ class App extends Component {
 								Tauqeer
 							</Typography>
 
-							<Typography css={css`padding-top: px;`}>
+							<Typography>
 								Pakistan · (+92) 321-5991397 · {' '}
 								<a
 									css={css`
@@ -132,11 +132,32 @@ class App extends Component {
 									saudtauqeer381@gmail.com
 								</a>
 							</Typography>
+							{/* social links */}
+							<Grid item>
+								<a
+									href="https://drive.google.com/file/d/1jJjONanUisBlDVYVE6HsjABFPecwatNL/view?usp=sharing"
+									target="blank"
+								>
+									<img alt="PDF resume icon" src="/img/svg/pdf.svg" width="50" height="55" />
+								</a>
+								<a class="mb-3" href="https://www.linkedin.com/in/saud-tauqeer" target="blank">
+									<img alt="LinkedIn icon" src="./img/svg/linkedin.svg" width="50" height="55" />
+								</a>
+								<a href="https://github.com/SaudTauqeer" target="blank">
+									<img alt="Github" src="/img/svg/github.svg" width="50" height="55" />
+								</a>
+								<a href="https://twitter.com/@Saud_Tauqeer" target="blank">
+									<img alt="Twitter" src="./img/svg/twitter.svg" width="50" height="55" />
+								</a>
+								<a href="https://www.facebook.com/supreme381" target="blank">
+									<img alt="Messenger icon" src="./img/svg/messenger.svg" width="50" height="55" />
+								</a>
+							</Grid>
 							{/* Scroll Container  */}
 							<Grid
 								container
 								style={{
-									padding: '10px 4px 6em 4px',
+									padding: '10px 10px 6em 10px',
 									height: '100vh',
 									overflowY: 'auto'
 								}}
