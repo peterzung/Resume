@@ -133,14 +133,14 @@ class App extends Component {
 								</a>
 							</Typography>
 							{/* social links */}
-							<Grid item>
+							<Grid container direction="row">
 								<a
 									href="https://drive.google.com/file/d/1jJjONanUisBlDVYVE6HsjABFPecwatNL/view?usp=sharing"
 									target="blank"
 								>
 									<img alt="PDF resume icon" src="/img/svg/pdf.svg" width="50" height="55" />
 								</a>
-								<a class="mb-3" href="https://www.linkedin.com/in/saud-tauqeer" target="blank">
+								<a href="https://www.linkedin.com/in/saud-tauqeer" target="blank">
 									<img alt="LinkedIn icon" src="./img/svg/linkedin.svg" width="50" height="55" />
 								</a>
 								<a href="https://github.com/SaudTauqeer" target="blank">
@@ -149,7 +149,7 @@ class App extends Component {
 								<a href="https://twitter.com/@Saud_Tauqeer" target="blank">
 									<img alt="Twitter" src="./img/svg/twitter.svg" width="50" height="55" />
 								</a>
-								<a href="https://www.facebook.com/supreme381" target="blank">
+								<a href="m.me/supreme381" target="blank">
 									<img alt="Messenger icon" src="./img/svg/messenger.svg" width="50" height="55" />
 								</a>
 							</Grid>
