@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Typography, Avatar, Grid } from '@material-ui/core';
 import Hidden from '@material-ui/core/Hidden';
 import ScrollspyNav from 'react-scrollspy-nav';
+// https://github.com/malte-wessel/react-custom-scrollbars/blob/master/docs/API.md
 import Scrollbar from 'react-custom-scrollbars';
 
 /** @jsx jsx */
